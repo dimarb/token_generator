@@ -1,0 +1,234 @@
+{
+  "last-round": 254,
+  "txn-groups": [
+    {
+      "txn-results": [
+        {
+          "txn-result": {
+            "pool-error": "",
+            "txn": {
+              "txn": {
+                "apaa": [
+                  "ifbvXQ==",
+                  "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc="
+                ],
+                "apan": 1,
+                "apid": 1376,
+                "fee": 12000,
+                "fv": 254,
+                "gen": "dockernet-v1",
+                "gh": "dR8VDHnaMaGF40FL8r+/i6y3SN+cT7n5hIlOpSkpetc=",
+                "lv": 1254,
+                "snd": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc=",
+                "type": "appl"
+              }
+            }
+          },
+          "app-budget-consumed": 22,
+          "exec-trace": {
+            "approval-program-hash": "Ik5TiGi+AOGRcfb/291osNohqMb6oyilhbSs3doL9jQ=",
+            "approval-program-trace": [
+              {
+                "pc": 1
+              },
+              {
+                "pc": 8
+              },
+              {
+                "pc": 29,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1376
+                  }
+                ]
+              },
+              {
+                "pc": 31,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 32,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 6
+                  }
+                ]
+              },
+              {
+                "pc": 33,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 34,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1
+                  }
+                ]
+              },
+              {
+                "pc": 36,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 37,
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 557,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "ifbvXQ=="
+                  }
+                ]
+              },
+              {
+                "pc": 563,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "ifbvXQ=="
+                  }
+                ]
+              },
+              {
+                "pc": 566,
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 481,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc="
+                  }
+                ]
+              },
+              {
+                "pc": 484,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc="
+                  },
+                  {
+                    "type": 1,
+                    "bytes": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc="
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 485,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 32
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 486,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 32
+                  }
+                ]
+              },
+              {
+                "pc": 488,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 489,
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 490
+              },
+              {
+                "pc": 495
+              },
+              {
+                "pc": 498,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc="
+                  }
+                ]
+              },
+              {
+                "pc": 500,
+                "stack-pop-count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "app-budget-added": 700,
+      "app-budget-consumed": 22,
+      "failed-at": [
+        0
+      ],
+      "failure-message": "transaction NAF2I7LVSP3MUXNIPPTPLGURI5DG4Y36URMNZ3BN6NJSZNG6GEFQ: logic eval error: invalid Box reference 0xd87185d76bb84953ef8e19a1492e90975f975436b240f90abc028abeb3a89417. Details: app=1376, pc=500, opcodes=proto 1 0; frame_dig -1; box_len"
+    }
+  ],
+  "version": 2,
+  "eval-overrides": {
+    "allow-empty-signatures": true,
+    "max-log-calls": 2048,
+    "max-log-size": 65536
+  },
+  "exec-trace-config": {
+    "enable": true,
+    "scratch-change": true,
+    "stack-change": true,
+    "state-change": true
+  },
+  "initial-states": {
+    "app-initial-states": [
+      {
+        "id": 1376,
+        "app-boxes": {
+          "kvs": [
+            {
+              "key": "2HGF12u4SVPvjhmhSS6Ql1+XVDayQPkKvAKKvrOolBc=",
+              "value": {
+                "type": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

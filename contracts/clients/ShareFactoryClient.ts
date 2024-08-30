@@ -36,7 +36,7 @@ export const APP_SPEC: AppSpec = {
     },
     "transferShares(uint64,address)void": {
       "call_config": {
-        "opt_in": "CALL"
+        "no_op": "CALL"
       }
     },
     "createApplication()void": {
@@ -73,7 +73,7 @@ export const APP_SPEC: AppSpec = {
     }
   },
   "source": {
-    "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgovLyBUaGlzIFRFQUwgd2FzIGdlbmVyYXRlZCBieSBURUFMU2NyaXB0IHYwLjEwMC4yCi8vIGh0dHBzOi8vZ2l0aHViLmNvbS9hbGdvcmFuZGZvdW5kYXRpb24vVEVBTFNjcmlwdAoKLy8gVGhpcyBjb250cmFjdCBpcyBjb21wbGlhbnQgd2l0aCBhbmQvb3IgaW1wbGVtZW50cyB0aGUgZm9sbG93aW5nIEFSQ3M6IFsgQVJDNCBdCgovLyBUaGUgZm9sbG93aW5nIHRlbiBsaW5lcyBvZiBURUFMIGhhbmRsZSBpbml0aWFsIHByb2dyYW0gZmxvdwovLyBUaGlzIHBhdHRlcm4gaXMgdXNlZCB0byBtYWtlIGl0IGVhc3kgZm9yIGFueW9uZSB0byBwYXJzZSB0aGUgc3RhcnQgb2YgdGhlIHByb2dyYW0gYW5kIGRldGVybWluZSBpZiBhIHNwZWNpZmljIGFjdGlvbiBpcyBhbGxvd2VkCi8vIEhlcmUsIGFjdGlvbiByZWZlcnMgdG8gdGhlIE9uQ29tcGxldGUgaW4gY29tYmluYXRpb24gd2l0aCB3aGV0aGVyIHRoZSBhcHAgaXMgYmVpbmcgY3JlYXRlZCBvciBjYWxsZWQKLy8gRXZlcnkgcG9zc2libGUgYWN0aW9uIGZvciB0aGlzIGNvbnRyYWN0IGlzIHJlcHJlc2VudGVkIGluIHRoZSBzd2l0Y2ggc3RhdGVtZW50Ci8vIElmIHRoZSBhY3Rpb24gaXMgbm90IGltcGxlbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlc3BlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIipOT1RfSU1QTEVNRU5URUQiIHdoaWNoIGp1c3QgY29udGFpbnMgImVyciIKdHhuIEFwcGxpY2F0aW9uSUQKIQppbnQgNgoqCnR4biBPbkNvbXBsZXRpb24KKwpzd2l0Y2ggKmNhbGxfTm9PcCAqY2FsbF9PcHRJbiAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpjcmVhdGVfTm9PcCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQKCipOT1RfSU1QTEVNRU5URUQ6CgkvLyBUaGUgcmVxdWVzdGVkIGFjdGlvbiBpcyBub3QgaW1wbGVtZW50ZWQgaW4gdGhpcyBjb250cmFjdC4gQXJlIHlvdSB1c2luZyB0aGUgY29ycmVjdCBPbkNvbXBsZXRlPyBEaWQgeW91IHNldCB5b3VyIGFwcCBJRD8KCWVycgoKLy8gZW1pdFNoYXJlcyhzdHJpbmcsc3RyaW5nLHVpbnQ2NCl1aW50NjQKKmFiaV9yb3V0ZV9lbWl0U2hhcmVzOgoJLy8gVGhlIEFCSSByZXR1cm4gcHJlZml4CglieXRlIDB4MTUxZjdjNzUKCgkvLyBxOiB1aW50NjQKCXR4bmEgQXBwbGljYXRpb25BcmdzIDMKCWJ0b2kKCgkvLyB1bml0TmFtZTogc3RyaW5nCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAyCglleHRyYWN0IDIgMAoKCS8vIG5hbWU6IHN0cmluZwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJZXh0cmFjdCAyIDAKCgkvLyBleGVjdXRlIGVtaXRTaGFyZXMoc3RyaW5nLHN0cmluZyx1aW50NjQpdWludDY0CgljYWxsc3ViIGVtaXRTaGFyZXMKCWl0b2IKCWNvbmNhdAoJbG9nCglpbnQgMQoJcmV0dXJuCgovLyBlbWl0U2hhcmVzKG5hbWU6IHN0cmluZywgdW5pdE5hbWU6IHN0cmluZywgcTogdWludDY0KTogQXNzZXRJRAplbWl0U2hhcmVzOgoJcHJvdG8gMyAxCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czo4CgkvLyByZXR1cm4gc2VuZEFzc2V0Q3JlYXRpb24oewoJLy8gICAgICAgY29uZmlnQXNzZXROYW1lOiBuYW1lLAoJLy8gICAgICAgY29uZmlnQXNzZXRVbml0TmFtZTogdW5pdE5hbWUsCgkvLyAgICAgICBjb25maWdBc3NldERlY2ltYWxzOiAxMCwKCS8vICAgICAgIGNvbmZpZ0Fzc2V0VG90YWw6IHEsCgkvLyAgICAgfSk7CglpdHhuX2JlZ2luCglpbnQgYWNmZwoJaXR4bl9maWVsZCBUeXBlRW51bQoKCS8vIGNvbnRyYWN0cy9JbnZlc3RtZW50LmFsZ28udHM6OQoJLy8gY29uZmlnQXNzZXROYW1lOiBuYW1lCglmcmFtZV9kaWcgLTEgLy8gbmFtZTogc3RyaW5nCglpdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0TmFtZQoKCS8vIGNvbnRyYWN0cy9JbnZlc3RtZW50LmFsZ28udHM6MTAKCS8vIGNvbmZpZ0Fzc2V0VW5pdE5hbWU6IHVuaXROYW1lCglmcmFtZV9kaWcgLTIgLy8gdW5pdE5hbWU6IHN0cmluZwoJaXR4bl9maWVsZCBDb25maWdBc3NldFVuaXROYW1lCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoxMQoJLy8gY29uZmlnQXNzZXREZWNpbWFsczogMTAKCWludCAxMAoJaXR4bl9maWVsZCBDb25maWdBc3NldERlY2ltYWxzCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoxMgoJLy8gY29uZmlnQXNzZXRUb3RhbDogcQoJZnJhbWVfZGlnIC0zIC8vIHE6IHVpbnQ2NAoJaXR4bl9maWVsZCBDb25maWdBc3NldFRvdGFsCgoJLy8gRmVlIGZpZWxkIG5vdCBzZXQsIGRlZmF1bHRpbmcgdG8gMAoJaW50IDAKCWl0eG5fZmllbGQgRmVlCgoJLy8gU3VibWl0IGlubmVyIHRyYW5zYWN0aW9uCglpdHhuX3N1Ym1pdAoJaXR4biBDcmVhdGVkQXNzZXRJRAoJcmV0c3ViCgovLyB0cmFuc2ZlclNoYXJlcyh1aW50NjQsYWRkcmVzcyl2b2lkCiphYmlfcm91dGVfdHJhbnNmZXJTaGFyZXM6CgkvLyByZWNlaXZlcjogYWRkcmVzcwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJZHVwCglsZW4KCWludCAzMgoJPT0KCgkvLyBhcmd1bWVudCAwIChyZWNlaXZlcikgZm9yIHRyYW5zZmVyU2hhcmVzIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBhc3NldDogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglidG9pCgoJLy8gZXhlY3V0ZSB0cmFuc2ZlclNoYXJlcyh1aW50NjQsYWRkcmVzcyl2b2lkCgljYWxsc3ViIHRyYW5zZmVyU2hhcmVzCglpbnQgMQoJcmV0dXJuCgovLyB0cmFuc2ZlclNoYXJlcyhhc3NldDogQXNzZXRJRCwgcmVjZWl2ZXI6IEFkZHJlc3MpOiB2b2lkCnRyYW5zZmVyU2hhcmVzOgoJcHJvdG8gMiAwCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoxOQoJLy8gc2VuZEFzc2V0VHJhbnNmZXIoewoJLy8gICAgICAgYXNzZXRSZWNlaXZlcjogcmVjZWl2ZXIsCgkvLyAgICAgICBhc3NldEFtb3VudDogMSwgLy8gVHJhbnNmZXJlbmNpYSBkZSB1biBORlQKCS8vICAgICAgIHhmZXJBc3NldDogYXNzZXQsCgkvLyAgICAgfSkKCWl0eG5fYmVnaW4KCWludCBheGZlcgoJaXR4bl9maWVsZCBUeXBlRW51bQoKCS8vIGNvbnRyYWN0cy9JbnZlc3RtZW50LmFsZ28udHM6MjAKCS8vIGFzc2V0UmVjZWl2ZXI6IHJlY2VpdmVyCglmcmFtZV9kaWcgLTIgLy8gcmVjZWl2ZXI6IEFkZHJlc3MKCWl0eG5fZmllbGQgQXNzZXRSZWNlaXZlcgoKCS8vIGNvbnRyYWN0cy9JbnZlc3RtZW50LmFsZ28udHM6MjEKCS8vIGFzc2V0QW1vdW50OiAxCglpbnQgMQoJaXR4bl9maWVsZCBBc3NldEFtb3VudAoKCS8vIGNvbnRyYWN0cy9JbnZlc3RtZW50LmFsZ28udHM6MjIKCS8vIHhmZXJBc3NldDogYXNzZXQKCWZyYW1lX2RpZyAtMSAvLyBhc3NldDogQXNzZXRJRAoJaXR4bl9maWVsZCBYZmVyQXNzZXQKCgkvLyBGZWUgZmllbGQgbm90IHNldCwgZGVmYXVsdGluZyB0byAwCglpbnQgMAoJaXR4bl9maWVsZCBGZWUKCgkvLyBTdWJtaXQgaW5uZXIgdHJhbnNhY3Rpb24KCWl0eG5fc3VibWl0CglyZXRzdWIKCiphYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb246CglpbnQgMQoJcmV0dXJuCgoqY3JlYXRlX05vT3A6CgltZXRob2QgImNyZWF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggKmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbgoKCS8vIHRoaXMgY29udHJhY3QgZG9lcyBub3QgaW1wbGVtZW50IHRoZSBnaXZlbiBBQkkgbWV0aG9kIGZvciBjcmVhdGUgTm9PcAoJZXJyCgoqY2FsbF9Ob09wOgoJbWV0aG9kICJlbWl0U2hhcmVzKHN0cmluZyxzdHJpbmcsdWludDY0KXVpbnQ2NCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoICphYmlfcm91dGVfZW1pdFNoYXJlcwoKCS8vIHRoaXMgY29udHJhY3QgZG9lcyBub3QgaW1wbGVtZW50IHRoZSBnaXZlbiBBQkkgbWV0aG9kIGZvciBjYWxsIE5vT3AKCWVycgoKKmNhbGxfT3B0SW46CgltZXRob2QgInRyYW5zZmVyU2hhcmVzKHVpbnQ2NCxhZGRyZXNzKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCAqYWJpX3JvdXRlX3RyYW5zZmVyU2hhcmVzCgoJLy8gdGhpcyBjb250cmFjdCBkb2VzIG5vdCBpbXBsZW1lbnQgdGhlIGdpdmVuIEFCSSBtZXRob2QgZm9yIGNhbGwgT3B0SW4KCWVycg==",
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgovLyBUaGlzIFRFQUwgd2FzIGdlbmVyYXRlZCBieSBURUFMU2NyaXB0IHYwLjEwMC4yCi8vIGh0dHBzOi8vZ2l0aHViLmNvbS9hbGdvcmFuZGZvdW5kYXRpb24vVEVBTFNjcmlwdAoKLy8gVGhpcyBjb250cmFjdCBpcyBjb21wbGlhbnQgd2l0aCBhbmQvb3IgaW1wbGVtZW50cyB0aGUgZm9sbG93aW5nIEFSQ3M6IFsgQVJDNCBdCgovLyBUaGUgZm9sbG93aW5nIHRlbiBsaW5lcyBvZiBURUFMIGhhbmRsZSBpbml0aWFsIHByb2dyYW0gZmxvdwovLyBUaGlzIHBhdHRlcm4gaXMgdXNlZCB0byBtYWtlIGl0IGVhc3kgZm9yIGFueW9uZSB0byBwYXJzZSB0aGUgc3RhcnQgb2YgdGhlIHByb2dyYW0gYW5kIGRldGVybWluZSBpZiBhIHNwZWNpZmljIGFjdGlvbiBpcyBhbGxvd2VkCi8vIEhlcmUsIGFjdGlvbiByZWZlcnMgdG8gdGhlIE9uQ29tcGxldGUgaW4gY29tYmluYXRpb24gd2l0aCB3aGV0aGVyIHRoZSBhcHAgaXMgYmVpbmcgY3JlYXRlZCBvciBjYWxsZWQKLy8gRXZlcnkgcG9zc2libGUgYWN0aW9uIGZvciB0aGlzIGNvbnRyYWN0IGlzIHJlcHJlc2VudGVkIGluIHRoZSBzd2l0Y2ggc3RhdGVtZW50Ci8vIElmIHRoZSBhY3Rpb24gaXMgbm90IGltcGxlbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlc3BlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIipOT1RfSU1QTEVNRU5URUQiIHdoaWNoIGp1c3QgY29udGFpbnMgImVyciIKdHhuIEFwcGxpY2F0aW9uSUQKIQppbnQgNgoqCnR4biBPbkNvbXBsZXRpb24KKwpzd2l0Y2ggKmNhbGxfTm9PcCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKmNyZWF0ZV9Ob09wICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRAoKKk5PVF9JTVBMRU1FTlRFRDoKCS8vIFRoZSByZXF1ZXN0ZWQgYWN0aW9uIGlzIG5vdCBpbXBsZW1lbnRlZCBpbiB0aGlzIGNvbnRyYWN0LiBBcmUgeW91IHVzaW5nIHRoZSBjb3JyZWN0IE9uQ29tcGxldGU/IERpZCB5b3Ugc2V0IHlvdXIgYXBwIElEPwoJZXJyCgovLyBlbWl0U2hhcmVzKHN0cmluZyxzdHJpbmcsdWludDY0KXVpbnQ2NAoqYWJpX3JvdXRlX2VtaXRTaGFyZXM6CgkvLyBUaGUgQUJJIHJldHVybiBwcmVmaXgKCWJ5dGUgMHgxNTFmN2M3NQoKCS8vIHE6IHVpbnQ2NAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwoJYnRvaQoKCS8vIHVuaXROYW1lOiBzdHJpbmcKCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCWV4dHJhY3QgMiAwCgoJLy8gbmFtZTogc3RyaW5nCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglleHRyYWN0IDIgMAoKCS8vIGV4ZWN1dGUgZW1pdFNoYXJlcyhzdHJpbmcsc3RyaW5nLHVpbnQ2NCl1aW50NjQKCWNhbGxzdWIgZW1pdFNoYXJlcwoJaXRvYgoJY29uY2F0Cglsb2cKCWludCAxCglyZXR1cm4KCi8vIGVtaXRTaGFyZXMobmFtZTogc3RyaW5nLCB1bml0TmFtZTogc3RyaW5nLCBxOiB1aW50NjQpOiBBc3NldElECmVtaXRTaGFyZXM6Cglwcm90byAzIDEKCgkvLyBjb250cmFjdHMvSW52ZXN0bWVudC5hbGdvLnRzOjgKCS8vIHJldHVybiBzZW5kQXNzZXRDcmVhdGlvbih7CgkvLyAgICAgICBjb25maWdBc3NldE5hbWU6IG5hbWUsCgkvLyAgICAgICBjb25maWdBc3NldFVuaXROYW1lOiB1bml0TmFtZSwKCS8vICAgICAgIGNvbmZpZ0Fzc2V0RGVjaW1hbHM6IDEwLAoJLy8gICAgICAgY29uZmlnQXNzZXRUb3RhbDogcSwKCS8vICAgICB9KTsKCWl0eG5fYmVnaW4KCWludCBhY2ZnCglpdHhuX2ZpZWxkIFR5cGVFbnVtCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czo5CgkvLyBjb25maWdBc3NldE5hbWU6IG5hbWUKCWZyYW1lX2RpZyAtMSAvLyBuYW1lOiBzdHJpbmcKCWl0eG5fZmllbGQgQ29uZmlnQXNzZXROYW1lCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoxMAoJLy8gY29uZmlnQXNzZXRVbml0TmFtZTogdW5pdE5hbWUKCWZyYW1lX2RpZyAtMiAvLyB1bml0TmFtZTogc3RyaW5nCglpdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VW5pdE5hbWUKCgkvLyBjb250cmFjdHMvSW52ZXN0bWVudC5hbGdvLnRzOjExCgkvLyBjb25maWdBc3NldERlY2ltYWxzOiAxMAoJaW50IDEwCglpdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0RGVjaW1hbHMKCgkvLyBjb250cmFjdHMvSW52ZXN0bWVudC5hbGdvLnRzOjEyCgkvLyBjb25maWdBc3NldFRvdGFsOiBxCglmcmFtZV9kaWcgLTMgLy8gcTogdWludDY0CglpdHhuX2ZpZWxkIENvbmZpZ0Fzc2V0VG90YWwKCgkvLyBGZWUgZmllbGQgbm90IHNldCwgZGVmYXVsdGluZyB0byAwCglpbnQgMAoJaXR4bl9maWVsZCBGZWUKCgkvLyBTdWJtaXQgaW5uZXIgdHJhbnNhY3Rpb24KCWl0eG5fc3VibWl0CglpdHhuIENyZWF0ZWRBc3NldElECglyZXRzdWIKCi8vIHRyYW5zZmVyU2hhcmVzKHVpbnQ2NCxhZGRyZXNzKXZvaWQKKmFiaV9yb3V0ZV90cmFuc2ZlclNoYXJlczoKCS8vIHJlY2VpdmVyOiBhZGRyZXNzCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAyCglkdXAKCWxlbgoJaW50IDMyCgk9PQoKCS8vIGFyZ3VtZW50IDAgKHJlY2VpdmVyKSBmb3IgdHJhbnNmZXJTaGFyZXMgbXVzdCBiZSBhIGFkZHJlc3MKCWFzc2VydAoKCS8vIGFzc2V0OiB1aW50NjQKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWJ0b2kKCgkvLyBleGVjdXRlIHRyYW5zZmVyU2hhcmVzKHVpbnQ2NCxhZGRyZXNzKXZvaWQKCWNhbGxzdWIgdHJhbnNmZXJTaGFyZXMKCWludCAxCglyZXR1cm4KCi8vIHRyYW5zZmVyU2hhcmVzKGFzc2V0OiBBc3NldElELCByZWNlaXZlcjogQWRkcmVzcyk6IHZvaWQKdHJhbnNmZXJTaGFyZXM6Cglwcm90byAyIDAKCgkvLyBjb250cmFjdHMvSW52ZXN0bWVudC5hbGdvLnRzOjE4CgkvLyBzZW5kQXNzZXRUcmFuc2Zlcih7CgkvLyAgICAgICBhc3NldFJlY2VpdmVyOiByZWNlaXZlciwKCS8vICAgICAgIGFzc2V0QW1vdW50OiAxLCAvLyBUcmFuc2ZlcmVuY2lhIGRlIHVuIE5GVAoJLy8gICAgICAgeGZlckFzc2V0OiBhc3NldCwKCS8vICAgICB9KQoJaXR4bl9iZWdpbgoJaW50IGF4ZmVyCglpdHhuX2ZpZWxkIFR5cGVFbnVtCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoxOQoJLy8gYXNzZXRSZWNlaXZlcjogcmVjZWl2ZXIKCWZyYW1lX2RpZyAtMiAvLyByZWNlaXZlcjogQWRkcmVzcwoJaXR4bl9maWVsZCBBc3NldFJlY2VpdmVyCgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoyMAoJLy8gYXNzZXRBbW91bnQ6IDEKCWludCAxCglpdHhuX2ZpZWxkIEFzc2V0QW1vdW50CgoJLy8gY29udHJhY3RzL0ludmVzdG1lbnQuYWxnby50czoyMQoJLy8geGZlckFzc2V0OiBhc3NldAoJZnJhbWVfZGlnIC0xIC8vIGFzc2V0OiBBc3NldElECglpdHhuX2ZpZWxkIFhmZXJBc3NldAoKCS8vIEZlZSBmaWVsZCBub3Qgc2V0LCBkZWZhdWx0aW5nIHRvIDAKCWludCAwCglpdHhuX2ZpZWxkIEZlZQoKCS8vIFN1Ym1pdCBpbm5lciB0cmFuc2FjdGlvbgoJaXR4bl9zdWJtaXQKCXJldHN1YgoKKmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCWludCAxCglyZXR1cm4KCipjcmVhdGVfTm9PcDoKCW1ldGhvZCAiY3JlYXRlQXBwbGljYXRpb24oKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCAqYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgoJLy8gdGhpcyBjb250cmFjdCBkb2VzIG5vdCBpbXBsZW1lbnQgdGhlIGdpdmVuIEFCSSBtZXRob2QgZm9yIGNyZWF0ZSBOb09wCgllcnIKCipjYWxsX05vT3A6CgltZXRob2QgImVtaXRTaGFyZXMoc3RyaW5nLHN0cmluZyx1aW50NjQpdWludDY0IgoJbWV0aG9kICJ0cmFuc2ZlclNoYXJlcyh1aW50NjQsYWRkcmVzcyl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggKmFiaV9yb3V0ZV9lbWl0U2hhcmVzICphYmlfcm91dGVfdHJhbnNmZXJTaGFyZXMKCgkvLyB0aGlzIGNvbnRyYWN0IGRvZXMgbm90IGltcGxlbWVudCB0aGUgZ2l2ZW4gQUJJIG1ldGhvZCBmb3IgY2FsbCBOb09wCgllcnI=",
     "clear": "I3ByYWdtYSB2ZXJzaW9uIDEw"
   },
   "contract": {
@@ -286,28 +286,6 @@ export abstract class ShareFactoryCallFactory {
   }
 
   /**
-   * Gets available optIn call factories
-   */
-  static get optIn() {
-    return {
-      /**
-       * Constructs an opt in call for the ShareFactory smart contract using the transferShares(uint64,address)void ABI method
-       *
-       * @param args Any args for the contract call
-       * @param params Any additional parameters for the call
-       * @returns A TypedCallParams object for the call
-       */
-      transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-        return {
-          method: 'transferShares(uint64,address)void' as const,
-          methodArgs: Array.isArray(args) ? args : [args.asset, args.receiver],
-          ...params,
-        }
-      },
-    }
-  }
-
-  /**
    * Constructs a no op call for the emitShares(string,string,uint64)uint64 ABI method
    *
    * @param args Any args for the contract call
@@ -318,6 +296,20 @@ export abstract class ShareFactoryCallFactory {
     return {
       method: 'emitShares(string,string,uint64)uint64' as const,
       methodArgs: Array.isArray(args) ? args : [args.name, args.unitName, args.q],
+      ...params,
+    }
+  }
+  /**
+   * Constructs a no op call for the transferShares(uint64,address)void ABI method
+   *
+   * @param args Any args for the contract call
+   * @param params Any additional parameters for the call
+   * @returns A TypedCallParams object for the call
+   */
+  static transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params: AppClientCallCoreParams & CoreAppCallArgs) {
+    return {
+      method: 'transferShares(uint64,address)void' as const,
+      methodArgs: Array.isArray(args) ? args : [args.asset, args.receiver],
       ...params,
     }
   }
@@ -411,25 +403,6 @@ export class ShareFactoryClient {
   }
 
   /**
-   * Gets available optIn methods
-   */
-  public get optIn() {
-    const $this = this
-    return {
-      /**
-       * Opts the user into an existing instance of the ShareFactory smart contract using the transferShares(uint64,address)void ABI method.
-       *
-       * @param args The arguments for the smart contract call
-       * @param params Any additional parameters for the call
-       * @returns The optIn result
-       */
-      async transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params: AppClientCallCoreParams = {}) {
-        return $this.mapReturnValue<MethodReturn<'transferShares(uint64,address)void'>>(await $this.appClient.optIn(ShareFactoryCallFactory.optIn.transferShares(args, params)))
-      },
-    }
-  }
-
-  /**
    * Makes a clear_state call to an existing instance of the ShareFactory smart contract.
    *
    * @param args The arguments for the bare call
@@ -450,6 +423,17 @@ export class ShareFactoryClient {
     return this.call(ShareFactoryCallFactory.emitShares(args, params))
   }
 
+  /**
+   * Calls the transferShares(uint64,address)void ABI method.
+   *
+   * @param args The arguments for the contract call
+   * @param params Any additional parameters for the call
+   * @returns The result of the call
+   */
+  public transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
+    return this.call(ShareFactoryCallFactory.transferShares(args, params))
+  }
+
   public compose(): ShareFactoryComposer {
     const client = this
     const atc = new AtomicTransactionComposer()
@@ -461,15 +445,10 @@ export class ShareFactoryClient {
         resultMappers.push(undefined)
         return this
       },
-      get optIn() {
-        const $this = this
-        return {
-          transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params?: AppClientComposeCallCoreParams) {
-            promiseChain = promiseChain.then(() => client.optIn.transferShares(args, {...params, sendParams: {...params?.sendParams, skipSending: true, atc}}))
-            resultMappers.push(undefined)
-            return $this
-          },
-        }
+      transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params?: AppClientComposeCallCoreParams & CoreAppCallArgs) {
+        promiseChain = promiseChain.then(() => client.transferShares(args, {...params, sendParams: {...params?.sendParams, skipSending: true, atc}}))
+        resultMappers.push(undefined)
+        return this
       },
       clearState(args?: BareCallArgs & AppClientComposeCallCoreParams & CoreAppCallArgs) {
         promiseChain = promiseChain.then(() => client.clearState({...args, sendParams: {...args?.sendParams, skipSending: true, atc}}))
@@ -514,18 +493,13 @@ export type ShareFactoryComposer<TReturns extends [...any[]] = []> = {
   emitShares(args: MethodArgs<'emitShares(string,string,uint64)uint64'>, params?: AppClientComposeCallCoreParams & CoreAppCallArgs): ShareFactoryComposer<[...TReturns, MethodReturn<'emitShares(string,string,uint64)uint64'>]>
 
   /**
-   * Gets available optIn methods
+   * Calls the transferShares(uint64,address)void ABI method.
+   *
+   * @param args The arguments for the contract call
+   * @param params Any additional parameters for the call
+   * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  readonly optIn: {
-    /**
-     * Opts the user into an existing instance of the ShareFactory smart contract using the transferShares(uint64,address)void ABI method.
-     *
-     * @param args The arguments for the smart contract call
-     * @param params Any additional parameters for the call
-     * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
-     */
-    transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params?: AppClientComposeCallCoreParams): ShareFactoryComposer<[...TReturns, MethodReturn<'transferShares(uint64,address)void'>]>
-  }
+  transferShares(args: MethodArgs<'transferShares(uint64,address)void'>, params?: AppClientComposeCallCoreParams & CoreAppCallArgs): ShareFactoryComposer<[...TReturns, MethodReturn<'transferShares(uint64,address)void'>]>
 
   /**
    * Makes a clear_state call to an existing instance of the ShareFactory smart contract.

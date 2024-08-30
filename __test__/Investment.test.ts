@@ -7,7 +7,10 @@ const fixture = algorandFixture();
 algokit.Config.configure({ populateAppCallResources: true });
 
 let appClientShare: InvestmentCallerClient;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let account: any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let asetId: any;
 
 describe('Investment', () => {
   beforeEach(fixture.beforeEach);
@@ -15,6 +18,7 @@ describe('Investment', () => {
   beforeAll(async () => {
     await fixture.beforeEach();
     const { testAccount } = fixture.context;
+
     account = testAccount;
     const { algorand } = fixture;
 
@@ -28,16 +32,21 @@ describe('Investment', () => {
     );
 
     await appClientShare.create.createApplication({});
-    await appClientShare.appClient.fundAppAccount(algokit.microAlgos(500_000));
+    await appClientShare.appClient.fundAppAccount(algokit.microAlgos(550_000));
   });
 
   test('Emit Tokens', async () => {
-    const holder = await appClientShare.emmitAndGetShares(
-      { name: 'MyTokenTest', unitName: 'MTT', q: 100 },
-      {
-        sendParams: { fee: algokit.microAlgos(12_000) },
-      }
+    const holder = Number(
+      (
+        await appClientShare.emmitAndGetShares(
+          { name: 'MyTokenTest', unitName: 'MTT', q: 100 },
+          {
+            sendParams: { fee: algokit.microAlgos(12_000) },
+          }
+        )
+      ).return?.valueOf()
     );
+    asetId = holder;
     expect(holder).not.toBeUndefined();
   });
 
@@ -50,6 +59,12 @@ describe('Investment', () => {
     );
     expect(holder).not.toBeUndefined();
   });
+
+  test('Optin asset Holder', async () => {
+    const { algorand } = fixture;
+    await algokit.assetOptIn({ account, assetId: asetId }, algorand.client.algod);
+  });
+
   test('Transfer to Holder', async () => {
     const holder = await appClientShare.transferToken(
       { receiver: account.addr },

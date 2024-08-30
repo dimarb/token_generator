@@ -16,7 +16,7 @@ int 6
 *
 txn OnCompletion
 +
-switch *call_NoOp *call_OptIn *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *create_NoOp *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED
+switch *call_NoOp *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *create_NoOp *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED
 
 *NOT_IMPLEMENTED:
 	// The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?
@@ -116,7 +116,7 @@ emitShares:
 transferShares:
 	proto 2 0
 
-	// contracts/Investment.algo.ts:19
+	// contracts/Investment.algo.ts:18
 	// sendAssetTransfer({
 	//       assetReceiver: receiver,
 	//       assetAmount: 1, // Transferencia de un NFT
@@ -126,17 +126,17 @@ transferShares:
 	int axfer
 	itxn_field TypeEnum
 
-	// contracts/Investment.algo.ts:20
+	// contracts/Investment.algo.ts:19
 	// assetReceiver: receiver
 	frame_dig -2 // receiver: Address
 	itxn_field AssetReceiver
 
-	// contracts/Investment.algo.ts:21
+	// contracts/Investment.algo.ts:20
 	// assetAmount: 1
 	int 1
 	itxn_field AssetAmount
 
-	// contracts/Investment.algo.ts:22
+	// contracts/Investment.algo.ts:21
 	// xferAsset: asset
 	frame_dig -1 // asset: AssetID
 	itxn_field XferAsset
@@ -163,16 +163,9 @@ transferShares:
 
 *call_NoOp:
 	method "emitShares(string,string,uint64)uint64"
-	txna ApplicationArgs 0
-	match *abi_route_emitShares
-
-	// this contract does not implement the given ABI method for call NoOp
-	err
-
-*call_OptIn:
 	method "transferShares(uint64,address)void"
 	txna ApplicationArgs 0
-	match *abi_route_transferShares
+	match *abi_route_emitShares *abi_route_transferShares
 
-	// this contract does not implement the given ABI method for call OptIn
+	// this contract does not implement the given ABI method for call NoOp
 	err
