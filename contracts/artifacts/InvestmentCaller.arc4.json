@@ -1,0 +1,61 @@
+{
+  "name": "InvestmentCaller",
+  "desc": "",
+  "methods": [
+    {
+      "name": "emmitAndGetShares",
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "unitName",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "uint64"
+      }
+    },
+    {
+      "name": "createHolder",
+      "args": [
+        {
+          "name": "adress",
+          "type": "address"
+        },
+        {
+          "name": "data",
+          "type": "(string,string,string,string)"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "transferToken",
+      "args": [
+        {
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
