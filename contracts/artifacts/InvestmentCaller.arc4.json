@@ -4,34 +4,42 @@
   "methods": [
     {
       "name": "emmitAndGetShares",
+      "desc": "Método para crear un Token y realizar transferencia",
       "args": [
         {
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "desc": "Nombre del activo"
         },
         {
           "name": "unitName",
-          "type": "string"
+          "type": "string",
+          "desc": "Nombre de la unidad del activo"
         },
         {
           "name": "q",
-          "type": "uint64"
+          "type": "uint64",
+          "desc": "Cantidad total de unidades del activo"
         }
       ],
       "returns": {
-        "type": "uint64"
+        "type": "uint64",
+        "desc": "AssetID - ID del activo creado"
       }
     },
     {
       "name": "createHolder",
+      "desc": "Método para crear un titular de acciones",
       "args": [
         {
           "name": "adress",
-          "type": "address"
+          "type": "address",
+          "desc": "Dirección del titular"
         },
         {
           "name": "data",
-          "type": "(string,string,string,string)"
+          "type": "(string,string,string,string)",
+          "desc": "Datos del titular"
         }
       ],
       "returns": {
@@ -40,10 +48,12 @@
     },
     {
       "name": "transferToken",
+      "desc": "Método para transferir un token a un receptor",
       "args": [
         {
           "name": "receiver",
-          "type": "address"
+          "type": "address",
+          "desc": "Dirección del receptor"
         }
       ],
       "returns": {

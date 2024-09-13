@@ -39,6 +39,7 @@ class ShareFactory extends Contract {
 /**
  * Clase para invocar métodos de ShareFactory
  */
+// eslint-disable-next-line no-unused-vars
 class InvestmentCaller extends Contract {
   metaData = BoxMap<Address, MetaDataInvestor>();
 

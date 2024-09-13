@@ -4,34 +4,42 @@
   "methods": [
     {
       "name": "emitShares",
+      "desc": "Método para crear una acción",
       "args": [
         {
           "name": "name",
-          "type": "string"
+          "type": "string",
+          "desc": "Nombre del activo"
         },
         {
           "name": "unitName",
-          "type": "string"
+          "type": "string",
+          "desc": "Nombre de la unidad del activo"
         },
         {
           "name": "q",
-          "type": "uint64"
+          "type": "uint64",
+          "desc": "Cantidad total de unidades del activo"
         }
       ],
       "returns": {
-        "type": "uint64"
+        "type": "uint64",
+        "desc": "AssetID - ID del activo creado"
       }
     },
     {
       "name": "transferShares",
+      "desc": "Método para transferir una acción",
       "args": [
         {
           "name": "asset",
-          "type": "uint64"
+          "type": "uint64",
+          "desc": "ID del activo a transferir"
         },
         {
           "name": "receiver",
-          "type": "address"
+          "type": "address",
+          "desc": "Dirección del receptor del activo"
         }
       ],
       "returns": {

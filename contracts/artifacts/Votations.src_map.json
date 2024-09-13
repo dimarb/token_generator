@@ -1,0 +1,1123 @@
+[
+  {
+    "teal": 1,
+    "source": 6,
+    "pc": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "teal": 13,
+    "source": 6,
+    "pc": [
+      14,
+      15
+    ]
+  },
+  {
+    "teal": 14,
+    "source": 6,
+    "pc": [
+      16
+    ]
+  },
+  {
+    "teal": 15,
+    "source": 6,
+    "pc": [
+      17,
+      18
+    ]
+  },
+  {
+    "teal": 16,
+    "source": 6,
+    "pc": [
+      19
+    ]
+  },
+  {
+    "teal": 17,
+    "source": 6,
+    "pc": [
+      20,
+      21
+    ]
+  },
+  {
+    "teal": 18,
+    "source": 6,
+    "pc": [
+      22
+    ]
+  },
+  {
+    "teal": 19,
+    "source": 6,
+    "pc": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ]
+  },
+  {
+    "teal": 23,
+    "source": 6,
+    "errorMessage": "The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?",
+    "pc": [
+      49
+    ]
+  },
+  {
+    "teal": 28,
+    "source": 11,
+    "pc": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "teal": 29,
+    "source": 11,
+    "pc": [
+      53
+    ]
+  },
+  {
+    "teal": 30,
+    "source": 11,
+    "pc": [
+      54
+    ]
+  },
+  {
+    "teal": 34,
+    "source": 11,
+    "pc": [
+      55,
+      56,
+      57
+    ]
+  },
+  {
+    "teal": 38,
+    "source": 12,
+    "pc": [
+      58
+    ]
+  },
+  {
+    "teal": 39,
+    "source": 12,
+    "pc": [
+      59,
+      60,
+      61
+    ]
+  },
+  {
+    "teal": 40,
+    "source": 12,
+    "pc": [
+      62,
+      63
+    ]
+  },
+  {
+    "teal": 41,
+    "source": 12,
+    "pc": [
+      64
+    ]
+  },
+  {
+    "teal": 42,
+    "source": 12,
+    "pc": [
+      65
+    ]
+  },
+  {
+    "teal": 43,
+    "source": 11,
+    "pc": [
+      66
+    ]
+  },
+  {
+    "teal": 48,
+    "source": 15,
+    "pc": [
+      67,
+      68,
+      69
+    ]
+  },
+  {
+    "teal": 51,
+    "source": 15,
+    "pc": [
+      70,
+      71,
+      72
+    ]
+  },
+  {
+    "teal": 52,
+    "source": 15,
+    "pc": [
+      73
+    ]
+  },
+  {
+    "teal": 53,
+    "source": 15,
+    "pc": [
+      74
+    ]
+  },
+  {
+    "teal": 54,
+    "source": 15,
+    "pc": [
+      75
+    ]
+  },
+  {
+    "teal": 55,
+    "source": 15,
+    "pc": [
+      76
+    ]
+  },
+  {
+    "teal": 58,
+    "source": 15,
+    "errorMessage": "argument 1 (address) for reigsterCandidate must be a address",
+    "pc": [
+      77
+    ]
+  },
+  {
+    "teal": 61,
+    "source": 15,
+    "pc": [
+      78,
+      79,
+      80
+    ]
+  },
+  {
+    "teal": 62,
+    "source": 15,
+    "pc": [
+      81
+    ]
+  },
+  {
+    "teal": 63,
+    "source": 15,
+    "pc": [
+      82
+    ]
+  },
+  {
+    "teal": 67,
+    "source": 15,
+    "pc": [
+      83,
+      84,
+      85
+    ]
+  },
+  {
+    "teal": 71,
+    "source": 16,
+    "pc": [
+      86
+    ]
+  },
+  {
+    "teal": 72,
+    "source": 16,
+    "pc": [
+      87
+    ]
+  },
+  {
+    "teal": 73,
+    "source": 16,
+    "pc": [
+      88,
+      89
+    ]
+  },
+  {
+    "teal": 74,
+    "source": 16,
+    "pc": [
+      90
+    ]
+  },
+  {
+    "teal": 77,
+    "source": 16,
+    "errorMessage": "Only the owner can register a candidate",
+    "pc": [
+      91
+    ]
+  },
+  {
+    "teal": 81,
+    "source": 17,
+    "pc": [
+      92,
+      93
+    ]
+  },
+  {
+    "teal": 82,
+    "source": 17,
+    "pc": [
+      94
+    ]
+  },
+  {
+    "teal": 83,
+    "source": 17,
+    "pc": [
+      95
+    ]
+  },
+  {
+    "teal": 84,
+    "source": 17,
+    "pc": [
+      96
+    ]
+  },
+  {
+    "teal": 85,
+    "source": 17,
+    "pc": [
+      97
+    ]
+  },
+  {
+    "teal": 88,
+    "source": 17,
+    "errorMessage": "The candidate is already registered",
+    "pc": [
+      98
+    ]
+  },
+  {
+    "teal": 92,
+    "source": 18,
+    "pc": [
+      99,
+      100
+    ]
+  },
+  {
+    "teal": 93,
+    "source": 18,
+    "pc": [
+      101
+    ]
+  },
+  {
+    "teal": 94,
+    "source": 18,
+    "pc": [
+      102
+    ]
+  },
+  {
+    "teal": 95,
+    "source": 18,
+    "pc": [
+      103
+    ]
+  },
+  {
+    "teal": 96,
+    "source": 18,
+    "pc": [
+      104
+    ]
+  },
+  {
+    "teal": 97,
+    "source": 18,
+    "pc": [
+      105
+    ]
+  },
+  {
+    "teal": 98,
+    "source": 18,
+    "pc": [
+      106,
+      107,
+      108,
+      109
+    ]
+  },
+  {
+    "teal": 99,
+    "source": 18,
+    "pc": [
+      110,
+      111
+    ]
+  },
+  {
+    "teal": 100,
+    "source": 18,
+    "pc": [
+      112,
+      113,
+      114
+    ]
+  },
+  {
+    "teal": 101,
+    "source": 18,
+    "pc": [
+      115,
+      116,
+      117
+    ]
+  },
+  {
+    "teal": 102,
+    "source": 18,
+    "pc": [
+      118,
+      119,
+      120
+    ]
+  },
+  {
+    "teal": 103,
+    "source": 18,
+    "pc": [
+      121
+    ]
+  },
+  {
+    "teal": 104,
+    "source": 18,
+    "pc": [
+      122
+    ]
+  },
+  {
+    "teal": 105,
+    "source": 18,
+    "pc": [
+      123
+    ]
+  },
+  {
+    "teal": 106,
+    "source": 15,
+    "pc": [
+      124
+    ]
+  },
+  {
+    "teal": 111,
+    "source": 21,
+    "pc": [
+      125,
+      126,
+      127
+    ]
+  },
+  {
+    "teal": 112,
+    "source": 21,
+    "pc": [
+      128
+    ]
+  },
+  {
+    "teal": 113,
+    "source": 21,
+    "pc": [
+      129
+    ]
+  },
+  {
+    "teal": 114,
+    "source": 21,
+    "pc": [
+      130
+    ]
+  },
+  {
+    "teal": 115,
+    "source": 21,
+    "pc": [
+      131
+    ]
+  },
+  {
+    "teal": 118,
+    "source": 21,
+    "errorMessage": "argument 0 (candidate) for vote must be a address",
+    "pc": [
+      132
+    ]
+  },
+  {
+    "teal": 121,
+    "source": 21,
+    "pc": [
+      133,
+      134,
+      135
+    ]
+  },
+  {
+    "teal": 122,
+    "source": 21,
+    "pc": [
+      136
+    ]
+  },
+  {
+    "teal": 123,
+    "source": 21,
+    "pc": [
+      137
+    ]
+  },
+  {
+    "teal": 127,
+    "source": 21,
+    "pc": [
+      138,
+      139,
+      140
+    ]
+  },
+  {
+    "teal": 131,
+    "source": 22,
+    "pc": [
+      141,
+      142
+    ]
+  },
+  {
+    "teal": 132,
+    "source": 22,
+    "pc": [
+      143
+    ]
+  },
+  {
+    "teal": 133,
+    "source": 22,
+    "pc": [
+      144
+    ]
+  },
+  {
+    "teal": 134,
+    "source": 22,
+    "pc": [
+      145
+    ]
+  },
+  {
+    "teal": 137,
+    "source": 22,
+    "errorMessage": "Canditae no registered",
+    "pc": [
+      146
+    ]
+  },
+  {
+    "teal": 141,
+    "source": 23,
+    "pc": [
+      147,
+      148
+    ]
+  },
+  {
+    "teal": 142,
+    "source": 23,
+    "pc": [
+      149
+    ]
+  },
+  {
+    "teal": 145,
+    "source": 23,
+    "errorMessage": "box value does not exist: this.dataCandidate(candidate).value",
+    "pc": [
+      150
+    ]
+  },
+  {
+    "teal": 146,
+    "source": 23,
+    "pc": [
+      151,
+      152
+    ]
+  },
+  {
+    "teal": 147,
+    "source": 23,
+    "pc": [
+      153,
+      154
+    ]
+  },
+  {
+    "teal": 148,
+    "source": 23,
+    "pc": [
+      155,
+      156
+    ]
+  },
+  {
+    "teal": 149,
+    "source": 23,
+    "pc": [
+      157,
+      158
+    ]
+  },
+  {
+    "teal": 150,
+    "source": 23,
+    "pc": [
+      159
+    ]
+  },
+  {
+    "teal": 153,
+    "source": 23,
+    "errorMessage": "box value does not exist: this.dataCandidate(candidate).value",
+    "pc": [
+      160
+    ]
+  },
+  {
+    "teal": 154,
+    "source": 23,
+    "pc": [
+      161,
+      162
+    ]
+  },
+  {
+    "teal": 155,
+    "source": 23,
+    "pc": [
+      163,
+      164
+    ]
+  },
+  {
+    "teal": 156,
+    "source": 23,
+    "pc": [
+      165,
+      166,
+      167
+    ]
+  },
+  {
+    "teal": 157,
+    "source": 23,
+    "pc": [
+      168
+    ]
+  },
+  {
+    "teal": 158,
+    "source": 23,
+    "pc": [
+      169
+    ]
+  },
+  {
+    "teal": 159,
+    "source": 23,
+    "pc": [
+      170
+    ]
+  },
+  {
+    "teal": 160,
+    "source": 23,
+    "pc": [
+      171
+    ]
+  },
+  {
+    "teal": 161,
+    "source": 23,
+    "pc": [
+      172
+    ]
+  },
+  {
+    "teal": 162,
+    "source": 23,
+    "pc": [
+      173
+    ]
+  },
+  {
+    "teal": 163,
+    "source": 23,
+    "pc": [
+      174,
+      175
+    ]
+  },
+  {
+    "teal": 164,
+    "source": 23,
+    "pc": [
+      176
+    ]
+  },
+  {
+    "teal": 167,
+    "source": 23,
+    "errorMessage": "this.dataCandidate(candidate).value.votes + 1 overflowed 8 bits",
+    "pc": [
+      177
+    ]
+  },
+  {
+    "teal": 168,
+    "source": 23,
+    "pc": [
+      178,
+      179,
+      180
+    ]
+  },
+  {
+    "teal": 169,
+    "source": 23,
+    "pc": [
+      181
+    ]
+  },
+  {
+    "teal": 170,
+    "source": 23,
+    "pc": [
+      182,
+      183
+    ]
+  },
+  {
+    "teal": 171,
+    "source": 23,
+    "pc": [
+      184
+    ]
+  },
+  {
+    "teal": 172,
+    "source": 23,
+    "pc": [
+      185
+    ]
+  },
+  {
+    "teal": 173,
+    "source": 23,
+    "pc": [
+      186
+    ]
+  },
+  {
+    "teal": 174,
+    "source": 23,
+    "pc": [
+      187
+    ]
+  },
+  {
+    "teal": 175,
+    "source": 23,
+    "pc": [
+      188
+    ]
+  },
+  {
+    "teal": 176,
+    "source": 21,
+    "pc": [
+      189
+    ]
+  },
+  {
+    "teal": 179,
+    "source": 6,
+    "pc": [
+      190,
+      191,
+      192,
+      193,
+      194,
+      195
+    ]
+  },
+  {
+    "teal": 180,
+    "source": 6,
+    "pc": [
+      196,
+      197,
+      198
+    ]
+  },
+  {
+    "teal": 181,
+    "source": 6,
+    "pc": [
+      199,
+      200,
+      201,
+      202
+    ]
+  },
+  {
+    "teal": 184,
+    "source": 6,
+    "errorMessage": "this contract does not implement the given ABI method for create NoOp",
+    "pc": [
+      203
+    ]
+  },
+  {
+    "teal": 187,
+    "source": 6,
+    "pc": [
+      204,
+      205,
+      206,
+      207,
+      208,
+      209
+    ]
+  },
+  {
+    "teal": 188,
+    "source": 6,
+    "pc": [
+      210,
+      211,
+      212,
+      213,
+      214,
+      215
+    ]
+  },
+  {
+    "teal": 189,
+    "source": 6,
+    "pc": [
+      216,
+      217,
+      218
+    ]
+  },
+  {
+    "teal": 190,
+    "source": 6,
+    "pc": [
+      219,
+      220,
+      221,
+      222,
+      223,
+      224
+    ]
+  },
+  {
+    "teal": 193,
+    "source": 6,
+    "errorMessage": "this contract does not implement the given ABI method for call NoOp",
+    "pc": [
+      225
+    ]
+  },
+  {
+    "teal": 196,
+    "source": 6,
+    "pc": [
+      226,
+      227,
+      228
+    ]
+  },
+  {
+    "teal": 197,
+    "source": 6,
+    "pc": [
+      229,
+      230
+    ]
+  },
+  {
+    "teal": 198,
+    "source": 6,
+    "pc": [
+      231,
+      232
+    ]
+  },
+  {
+    "teal": 199,
+    "source": 6,
+    "pc": [
+      233
+    ]
+  },
+  {
+    "teal": 200,
+    "source": 6,
+    "pc": [
+      234,
+      235
+    ]
+  },
+  {
+    "teal": 201,
+    "source": 6,
+    "pc": [
+      236,
+      237
+    ]
+  },
+  {
+    "teal": 202,
+    "source": 6,
+    "pc": [
+      238
+    ]
+  },
+  {
+    "teal": 205,
+    "source": 6,
+    "pc": [
+      239,
+      240,
+      241
+    ]
+  },
+  {
+    "teal": 206,
+    "source": 6,
+    "pc": [
+      242,
+      243
+    ]
+  },
+  {
+    "teal": 207,
+    "source": 6,
+    "pc": [
+      244,
+      245
+    ]
+  },
+  {
+    "teal": 208,
+    "source": 6,
+    "pc": [
+      246
+    ]
+  },
+  {
+    "teal": 209,
+    "source": 6,
+    "pc": [
+      247,
+      248
+    ]
+  },
+  {
+    "teal": 210,
+    "source": 6,
+    "pc": [
+      249,
+      250
+    ]
+  },
+  {
+    "teal": 211,
+    "source": 6,
+    "pc": [
+      251
+    ]
+  },
+  {
+    "teal": 212,
+    "source": 6,
+    "pc": [
+      252
+    ]
+  },
+  {
+    "teal": 213,
+    "source": 6,
+    "pc": [
+      253,
+      254
+    ]
+  },
+  {
+    "teal": 214,
+    "source": 6,
+    "pc": [
+      255
+    ]
+  },
+  {
+    "teal": 215,
+    "source": 6,
+    "pc": [
+      256
+    ]
+  },
+  {
+    "teal": 216,
+    "source": 6,
+    "pc": [
+      257
+    ]
+  },
+  {
+    "teal": 217,
+    "source": 6,
+    "pc": [
+      258,
+      259,
+      260
+    ]
+  },
+  {
+    "teal": 218,
+    "source": 6,
+    "pc": [
+      261,
+      262
+    ]
+  },
+  {
+    "teal": 219,
+    "source": 6,
+    "pc": [
+      263,
+      264
+    ]
+  },
+  {
+    "teal": 220,
+    "source": 6,
+    "pc": [
+      265
+    ]
+  },
+  {
+    "teal": 221,
+    "source": 6,
+    "pc": [
+      266
+    ]
+  },
+  {
+    "teal": 222,
+    "source": 6,
+    "pc": [
+      267,
+      268
+    ]
+  },
+  {
+    "teal": 223,
+    "source": 6,
+    "pc": [
+      269,
+      270
+    ]
+  },
+  {
+    "teal": 224,
+    "source": 6,
+    "pc": [
+      271,
+      272
+    ]
+  },
+  {
+    "teal": 225,
+    "source": 6,
+    "pc": [
+      273,
+      274
+    ]
+  },
+  {
+    "teal": 226,
+    "source": 6,
+    "pc": [
+      275
+    ]
+  }
+]

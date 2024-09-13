@@ -48,10 +48,16 @@ switch *call_NoOp *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEM
 	return
 
 // emitShares(name: string, unitName: string, q: uint64): AssetID
+//
+// Método para crear una acción
+// @param name - Nombre del activo
+// @param unitName - Nombre de la unidad del activo
+// @param q - Cantidad total de unidades del activo
+// @returns AssetID - ID del activo creado
 emitShares:
 	proto 3 1
 
-	// contracts/Investment.algo.ts:8
+	// contracts/Investment.algo.ts:17
 	// return sendAssetCreation({
 	//       configAssetName: name,
 	//       configAssetUnitName: unitName,
@@ -62,22 +68,22 @@ emitShares:
 	int acfg
 	itxn_field TypeEnum
 
-	// contracts/Investment.algo.ts:9
+	// contracts/Investment.algo.ts:18
 	// configAssetName: name
 	frame_dig -1 // name: string
 	itxn_field ConfigAssetName
 
-	// contracts/Investment.algo.ts:10
+	// contracts/Investment.algo.ts:19
 	// configAssetUnitName: unitName
 	frame_dig -2 // unitName: string
 	itxn_field ConfigAssetUnitName
 
-	// contracts/Investment.algo.ts:11
+	// contracts/Investment.algo.ts:20
 	// configAssetDecimals: 10
 	int 10
 	itxn_field ConfigAssetDecimals
 
-	// contracts/Investment.algo.ts:12
+	// contracts/Investment.algo.ts:21
 	// configAssetTotal: q
 	frame_dig -3 // q: uint64
 	itxn_field ConfigAssetTotal
@@ -113,30 +119,34 @@ emitShares:
 	return
 
 // transferShares(asset: AssetID, receiver: Address): void
+//
+// Método para transferir una acción
+// @param asset - ID del activo a transferir
+// @param receiver - Dirección del receptor del activo
 transferShares:
 	proto 2 0
 
-	// contracts/Investment.algo.ts:18
+	// contracts/Investment.algo.ts:31
 	// sendAssetTransfer({
 	//       assetReceiver: receiver,
-	//       assetAmount: 1, // Transferencia de un NFT
+	//       assetAmount: 1, // Cantidad de acciones a transferir
 	//       xferAsset: asset,
 	//     })
 	itxn_begin
 	int axfer
 	itxn_field TypeEnum
 
-	// contracts/Investment.algo.ts:19
+	// contracts/Investment.algo.ts:32
 	// assetReceiver: receiver
 	frame_dig -2 // receiver: Address
 	itxn_field AssetReceiver
 
-	// contracts/Investment.algo.ts:20
+	// contracts/Investment.algo.ts:33
 	// assetAmount: 1
 	int 1
 	itxn_field AssetAmount
 
-	// contracts/Investment.algo.ts:21
+	// contracts/Investment.algo.ts:34
 	// xferAsset: asset
 	frame_dig -1 // asset: AssetID
 	itxn_field XferAsset

@@ -48,13 +48,19 @@ switch *call_NoOp *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEMENTED *NOT_IMPLEM
 	return
 
 // emmitAndGetShares(name: string, unitName: string, q: uint64): AssetID
+//
+// Método para crear un Token y realizar transferencia
+// @param name - Nombre del activo
+// @param unitName - Nombre de la unidad del activo
+// @param q - Cantidad total de unidades del activo
+// @returns AssetID - ID del activo creado
 emmitAndGetShares:
 	proto 3 1
 
 	// Push empty bytes after the frame pointer to reserve space for local variables
 	byte 0x
 
-	// contracts/Investment.algo.ts:37
+	// contracts/Investment.algo.ts:58
 	// sendMethodCall<typeof ShareFactory.prototype.createApplication>({
 	//       clearStateProgram: ShareFactory.clearProgram(),
 	//       approvalProgram: ShareFactory.approvalProgram(),
@@ -65,12 +71,12 @@ emmitAndGetShares:
 	method "createApplication()void"
 	itxn_field ApplicationArgs
 
-	// contracts/Investment.algo.ts:38
+	// contracts/Investment.algo.ts:59
 	// clearStateProgram: ShareFactory.clearProgram()
 	byte b64 Cg==
 	itxn_field ClearStateProgram
 
-	// contracts/Investment.algo.ts:39
+	// contracts/Investment.algo.ts:60
 	// approvalProgram: ShareFactory.approvalProgram()
 	byte b64 CiACAQAxGBSBBgsxGQiNDAB4AAAAAAAAAAAAAABqAAAAAAAAAAAAAACABBUffHU2GgMXNhoCVwIANhoBVwIAiAAFFlCwIkOKAwGxgQOyEIv/siaL/rIlgQqyI4v9siIjsgGztDyJNhoCSRWBIBJENhoBF4gAAiJDigIAsYEEshCL/rIUIrISi/+yESOyAbOJIkOABLhEezY2GgCOAf/xAIAEzkt3Y4AE65zaTzYaAI4C/3T/sQA=
 	itxn_field ApprovalProgram
@@ -82,13 +88,13 @@ emmitAndGetShares:
 	// Submit inner transaction
 	itxn_submit
 
-	// contracts/Investment.algo.ts:42
+	// contracts/Investment.algo.ts:63
 	// this.appId.value = this.itxn.createdApplicationID
 	byte 0x6170704964 // "appId"
 	itxn CreatedApplicationID
 	app_global_put
 
-	// contracts/Investment.algo.ts:45
+	// contracts/Investment.algo.ts:66
 	// sendPayment({
 	//       amount: 200_000, // Pago en microAlgos
 	//       receiver: this.appId.value.address,
@@ -97,12 +103,12 @@ emmitAndGetShares:
 	int pay
 	itxn_field TypeEnum
 
-	// contracts/Investment.algo.ts:46
+	// contracts/Investment.algo.ts:67
 	// amount: 200_000
 	int 200_000
 	itxn_field Amount
 
-	// contracts/Investment.algo.ts:47
+	// contracts/Investment.algo.ts:68
 	// receiver: this.appId.value.address
 	byte 0x6170704964 // "appId"
 	app_global_get
@@ -117,10 +123,10 @@ emmitAndGetShares:
 	// Submit inner transaction
 	itxn_submit
 
-	// contracts/Investment.algo.ts:51
+	// contracts/Investment.algo.ts:72
 	// createdAsset = sendMethodCall<typeof ShareFactory.prototype.emitShares>({
 	//       applicationID: this.appId.value,
-	//       methodArgs: [name, unitName, q], // Nombre y unidad del NFT
+	//       methodArgs: [name, unitName, q], // Nombre y unidad del Token, cantidad total
 	//     })
 	itxn_begin
 	int appl
@@ -128,13 +134,13 @@ emmitAndGetShares:
 	method "emitShares(string,string,uint64)uint64"
 	itxn_field ApplicationArgs
 
-	// contracts/Investment.algo.ts:52
+	// contracts/Investment.algo.ts:73
 	// applicationID: this.appId.value
 	byte 0x6170704964 // "appId"
 	app_global_get
 	itxn_field ApplicationID
 
-	// contracts/Investment.algo.ts:53
+	// contracts/Investment.algo.ts:74
 	// methodArgs: [name, unitName, q]
 	frame_dig -1 // name: string
 	dup
@@ -170,7 +176,7 @@ emmitAndGetShares:
 	btoi
 	frame_bury 0 // createdAsset: uint64
 
-	// contracts/Investment.algo.ts:56
+	// contracts/Investment.algo.ts:77
 	// sendAssetTransfer({
 	//       assetReceiver: this.app.address,
 	//       assetAmount: 0,
@@ -180,17 +186,17 @@ emmitAndGetShares:
 	int axfer
 	itxn_field TypeEnum
 
-	// contracts/Investment.algo.ts:57
+	// contracts/Investment.algo.ts:78
 	// assetReceiver: this.app.address
 	global CurrentApplicationAddress
 	itxn_field AssetReceiver
 
-	// contracts/Investment.algo.ts:58
+	// contracts/Investment.algo.ts:79
 	// assetAmount: 0
 	int 0
 	itxn_field AssetAmount
 
-	// contracts/Investment.algo.ts:59
+	// contracts/Investment.algo.ts:80
 	// xferAsset: createdAsset
 	frame_dig 0 // createdAsset: uint64
 	itxn_field XferAsset
@@ -202,7 +208,7 @@ emmitAndGetShares:
 	// Submit inner transaction
 	itxn_submit
 
-	// contracts/Investment.algo.ts:62
+	// contracts/Investment.algo.ts:83
 	// sendMethodCall<typeof ShareFactory.prototype.transferShares>({
 	//       applicationID: this.appId.value,
 	//       methodArgs: [createdAsset, this.app.address],
@@ -213,13 +219,13 @@ emmitAndGetShares:
 	method "transferShares(uint64,address)void"
 	itxn_field ApplicationArgs
 
-	// contracts/Investment.algo.ts:63
+	// contracts/Investment.algo.ts:84
 	// applicationID: this.appId.value
 	byte 0x6170704964 // "appId"
 	app_global_get
 	itxn_field ApplicationID
 
-	// contracts/Investment.algo.ts:64
+	// contracts/Investment.algo.ts:85
 	// methodArgs: [createdAsset, this.app.address]
 	frame_dig 0 // createdAsset: uint64
 	itob
@@ -234,13 +240,13 @@ emmitAndGetShares:
 	// Submit inner transaction
 	itxn_submit
 
-	// contracts/Investment.algo.ts:67
+	// contracts/Investment.algo.ts:88
 	// this.assetId.value = createdAsset
 	byte 0x61737365744964 // "assetId"
 	frame_dig 0 // createdAsset: uint64
 	app_global_put
 
-	// contracts/Investment.algo.ts:69
+	// contracts/Investment.algo.ts:90
 	// return createdAsset;
 	frame_dig 0 // createdAsset: uint64
 
@@ -269,10 +275,14 @@ emmitAndGetShares:
 	return
 
 // createHolder(adress: Address, data: MetaDataInvestor): void
+//
+// Método para crear un titular de acciones
+// @param adress - Dirección del titular
+// @param data - Datos del titular
 createHolder:
 	proto 2 0
 
-	// contracts/Investment.algo.ts:73
+	// contracts/Investment.algo.ts:99
 	// assert(!this.metaData(adress).exists)
 	frame_dig -1 // adress: Address
 	box_len
@@ -281,7 +291,7 @@ createHolder:
 	!
 	assert
 
-	// contracts/Investment.algo.ts:74
+	// contracts/Investment.algo.ts:100
 	// this.metaData(adress).value = data
 	frame_dig -1 // adress: Address
 	dup
@@ -309,10 +319,13 @@ createHolder:
 	return
 
 // transferToken(receiver: Address): void
+//
+// Método para transferir un token a un receptor
+// @param receiver - Dirección del receptor
 transferToken:
 	proto 1 0
 
-	// contracts/Investment.algo.ts:78
+	// contracts/Investment.algo.ts:108
 	// assert(this.metaData(receiver).exists)
 	frame_dig -1 // receiver: Address
 	box_len
@@ -320,7 +333,7 @@ transferToken:
 	pop
 	assert
 
-	// contracts/Investment.algo.ts:79
+	// contracts/Investment.algo.ts:109
 	// sendMethodCall<typeof ShareFactory.prototype.transferShares>({
 	//       applicationID: this.appId.value,
 	//       methodArgs: [this.assetId.value, receiver],
@@ -331,13 +344,13 @@ transferToken:
 	method "transferShares(uint64,address)void"
 	itxn_field ApplicationArgs
 
-	// contracts/Investment.algo.ts:80
+	// contracts/Investment.algo.ts:110
 	// applicationID: this.appId.value
 	byte 0x6170704964 // "appId"
 	app_global_get
 	itxn_field ApplicationID
 
-	// contracts/Investment.algo.ts:81
+	// contracts/Investment.algo.ts:111
 	// methodArgs: [this.assetId.value, receiver]
 	byte 0x61737365744964 // "assetId"
 	app_global_get
