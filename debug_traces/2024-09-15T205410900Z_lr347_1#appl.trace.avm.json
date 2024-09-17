@@ -1,0 +1,249 @@
+{
+  "last-round": 347,
+  "txn-groups": [
+    {
+      "txn-results": [
+        {
+          "txn-result": {
+            "pool-error": "",
+            "txn": {
+              "txn": {
+                "apaa": [
+                  "YozjLQ==",
+                  "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY="
+                ],
+                "apid": 1380,
+                "fee": 12000,
+                "fv": 347,
+                "gen": "dockernet-v1",
+                "gh": "lBbgHDmbOUET62z5M5Uj3Gwf7d5xgsQWB8riGOZbOpg=",
+                "lv": 1347,
+                "snd": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY=",
+                "type": "appl"
+              }
+            }
+          },
+          "app-budget-consumed": 24,
+          "exec-trace": {
+            "approval-program-hash": "D8ifFYrdAlUflKQ8BTGO1kBfLTxrfSPG2KQWp76iEC4=",
+            "approval-program-trace": [
+              {
+                "pc": 1
+              },
+              {
+                "pc": 6
+              },
+              {
+                "pc": 15,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1380
+                  }
+                ]
+              },
+              {
+                "pc": 17,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 18,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 6
+                  }
+                ]
+              },
+              {
+                "pc": 20,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 21,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ]
+              },
+              {
+                "pc": 23,
+                "stack-additions": [
+                  {
+                    "type": 2
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 24,
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 317,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "kSJEyg=="
+                  }
+                ]
+              },
+              {
+                "pc": 323,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "YozjLQ=="
+                  }
+                ]
+              },
+              {
+                "pc": 329,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "8zIdCw=="
+                  }
+                ]
+              },
+              {
+                "pc": 335,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "YozjLQ=="
+                  }
+                ]
+              },
+              {
+                "pc": 338,
+                "stack-pop-count": 4
+              },
+              {
+                "pc": 194,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY="
+                  }
+                ]
+              },
+              {
+                "pc": 197,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY="
+                  },
+                  {
+                    "type": 1,
+                    "bytes": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY="
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 198,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 32
+                  }
+                ],
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 199,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 32
+                  }
+                ]
+              },
+              {
+                "pc": 200,
+                "stack-additions": [
+                  {
+                    "type": 2,
+                    "uint": 1
+                  }
+                ],
+                "stack-pop-count": 2
+              },
+              {
+                "pc": 201,
+                "stack-pop-count": 1
+              },
+              {
+                "pc": 202
+              },
+              {
+                "pc": 207
+              },
+              {
+                "pc": 210,
+                "stack-additions": [
+                  {
+                    "type": 1,
+                    "bytes": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY="
+                  }
+                ]
+              },
+              {
+                "pc": 212,
+                "stack-pop-count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "app-budget-added": 700,
+      "app-budget-consumed": 24,
+      "failed-at": [
+        0
+      ],
+      "failure-message": "transaction UURSHVGCKI3YTVSNMS7S7RJYJB2B4ACIFJWAAFDBOWKPFQYOMRYA: logic eval error: invalid Box reference 0x794ad0fe3ff37d6fd9c5e0fdb0e35a5bf6e55c0b0b2bd899697dec294bf849d6. Details: app=1380, pc=212, opcodes=proto 1 0; frame_dig -1; box_len"
+    }
+  ],
+  "version": 2,
+  "eval-overrides": {
+    "allow-empty-signatures": true,
+    "max-log-calls": 2048,
+    "max-log-size": 65536
+  },
+  "exec-trace-config": {
+    "enable": true,
+    "scratch-change": true,
+    "stack-change": true,
+    "state-change": true
+  },
+  "initial-states": {
+    "app-initial-states": [
+      {
+        "id": 1380,
+        "app-boxes": {
+          "kvs": [
+            {
+              "key": "eUrQ/j/zfW/ZxeD9sONaW/blXAsLK9iZaX3sKUv4SdY=",
+              "value": {
+                "type": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -17,8 +17,20 @@
           "type": "address"
         },
         {
-          "name": "data",
-          "type": "(string,string,string,string)"
+          "name": "fistName",
+          "type": "string"
+        },
+        {
+          "name": "lastName",
+          "type": "string"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "phone",
+          "type": "string"
         }
       ],
       "returns": {
@@ -35,6 +47,18 @@
       ],
       "returns": {
         "type": "void"
+      }
+    },
+    {
+      "name": "getVotes",
+      "args": [
+        {
+          "name": "candidate",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "(string,string,string,string,uint8)"
       }
     }
   ]
